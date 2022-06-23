@@ -24,13 +24,11 @@ let createDivs = times => {
 }
 
 // function to draw on grid 
-
 let defaultDraw = () => {
     container.addEventListener("mouseover", (event) => {
         event.target.style.backgroundColor = "black";
     });
 }
-
 
 // function to reset grid background color
 let resetGrid = () => {
@@ -49,9 +47,9 @@ let randomColor = () => {
 }
 
 
-createDivs(256);
-defaultDraw();
 
+createDivs(144);
+defaultDraw();
 
 resetBtn.addEventListener('click', resetGrid);
 randomBtn.addEventListener('click', randomColor);
