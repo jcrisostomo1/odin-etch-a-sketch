@@ -20,7 +20,3 @@ h1 {
     width: 100%;
     background-color: black;
 }
-
-div :hover {
-    background-color: chocolate;
-}
