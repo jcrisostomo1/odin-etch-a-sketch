@@ -2,21 +2,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: #404040;
 }
 
 h1 {
     text-align: center;
     margin: 1em;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 9em;
+    
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+button {
+    color: black;
+    height: 30px;
+}
+
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 50px);
+    grid-template-rows: repeat(16, 50px);
 }
 
 .grid-div {
     border: 2px solid black;
-    height: 50px;
-    width: 100%;
-    background-color: black;
+    background-color: white;
 }
