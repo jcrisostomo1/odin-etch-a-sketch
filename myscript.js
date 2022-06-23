@@ -1,5 +1,18 @@
 let container = document.querySelector(".grid-container");
 let resetBtn = document.getElementById("reset");
+let randomBtn = document.getElementById("random");
+
+const getRandomNumber = (maxNum) => {
+    return Math.floor(Math.random() * maxNum);
+  };
+
+const getRandomColor = () => {
+  const h = getRandomNumber(360);
+  const s = getRandomNumber(100);
+  const l = getRandomNumber(100);
+
+  return `hsl(${h}deg, ${s}%, ${l}%)`;
+};
 
 // function to create divs for grid container
 let createDivs = times => {
@@ -10,12 +23,14 @@ let createDivs = times => {
     }
 }
 
-createDivs(256);
+// function to draw on grid 
 
-// add event listener to grid container to change background color during mouseover
-container.addEventListener("mouseover", (event) => {
-    event.target.style.backgroundColor = "black";
-});
+let defaultDraw = () => {
+    container.addEventListener("mouseover", (event) => {
+        event.target.style.backgroundColor = "black";
+    });
+}
+
 
 // function to reset grid background color
 let resetGrid = () => {
@@ -23,6 +38,22 @@ let resetGrid = () => {
     divs.forEach(div => {
         div.style.backgroundColor = "white";
     });
+    defaultDraw();
 }
 
+// function to change random color
+let randomColor = () => {
+    container.addEventListener("mouseover", (event) => {
+        event.target.style.backgroundColor = getRandomColor();
+    });
+}
+
+
+createDivs(256);
+defaultDraw();
+
+
 resetBtn.addEventListener('click', resetGrid);
+randomBtn.addEventListener('click', randomColor);
+
+
