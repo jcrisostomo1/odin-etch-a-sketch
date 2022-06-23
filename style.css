@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.grid-div {
+    border: 2px solid black;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+
+div :hover {
+    background-color: chocolate;
+}
