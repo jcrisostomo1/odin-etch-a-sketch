@@ -23,7 +23,6 @@ let createDivs = times => {
     }
     container.style.gridTemplateColumns = `repeat(${times}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${times}, 1fr)`;
-    console.log(container.style)
     for(let i = 1; i <= Math.pow(times,2); i++) {
         let div = document.createElement("div");
         div.className=(`grid-div`);
