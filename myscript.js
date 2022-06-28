@@ -56,7 +56,7 @@ let randomColor = () => {
 // function to prompt user for grid size
 let getNewGridSize = () => {
     let gridSize = parseInt(prompt("Enter a new size for the grid.\nMUST BE UNDER 100."));
-    if (gridSize >= 100 || gridSize <= 0 || gridSize != NaN) {
+    if (gridSize >= 100 || gridSize <= 0 || isNaN(gridSize)) {
         alert("You did not enter a valid number for grid size!");
     } else {
         createDivs(gridSize);
