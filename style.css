@@ -39,6 +39,7 @@ button {
     display: grid;
     width: 700px;
     height: 700px;
+    margin-bottom: 2em;
 }
 
 .grid-div {
