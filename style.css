@@ -10,9 +10,7 @@ body {
     background-color: #565656;
     height: calc(100vh - 3px);
     margin: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-
+    padding: 0;
 }
 
 h1 {
@@ -25,7 +23,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 9em;
+    gap: 2em;
     
 }
 
@@ -43,8 +41,8 @@ button {
 
 .grid-container {
     display: grid;
-    width: 70vw;
     height: 70vh;
+    width: 55vw;
     margin-bottom: 2em;
 }
 
