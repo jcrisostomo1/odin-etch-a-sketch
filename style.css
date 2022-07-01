@@ -1,14 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
+:root {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
     color: #e5e5e5;
 }
 
 body {
+    display:flex; 
+    flex-direction:column; 
     background-color: #565656;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -39,12 +41,27 @@ button {
 
 .grid-container {
     display: grid;
-    width: 700px;
-    height: 700px;
+    width: 70vw;
+    height: 70vh;
     margin-bottom: 2em;
 }
 
 .grid-div {
     border: 1px solid black;
     background-color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    gap: 15px;
+    margin-top: auto;
+    padding: 10px
+}
+
+.fa-github {
+    color: white;
+    font-size: 24px;
 }
